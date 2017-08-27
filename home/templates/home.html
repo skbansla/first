@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HOME</title>
+</head>
+<body>
+<h1>hello Friends</h1>
+{% for i in songs %}
+    <br>
+    <img src="{{i.logo}}" alt="Logo" style="width:304px;height:304px;"><br>
+    {{i.song_title}} <br>
+    {{i.artist}} <br>
+    {{i.album_title}} <br>
+    {{i.genre_title}} <br>
+{% endfor %}
+</body>
+</html>
